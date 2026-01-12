@@ -9,9 +9,9 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 
-public class HotPotato extends Item {
+public class HotPotatoItem extends Item {
 
-    public HotPotato(Properties prop) {
+    public HotPotatoItem(Properties prop) {
         super(prop);
     }
 

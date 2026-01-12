@@ -4,6 +4,8 @@ import com.mojang.logging.LogUtils;
 
 import net.kilobytedisk.hotpotatomod.entity.ModEntities;
 import net.kilobytedisk.hotpotatomod.item.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.server.ServerStartingEvent;
@@ -69,7 +71,7 @@ public class PotatoMod
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-            // Some client setup code
+            EntityRenderers.register(ModEntities.POTATO_PROJECTILE.get(), ThrownItemRenderer::new);
         }
     }
 }

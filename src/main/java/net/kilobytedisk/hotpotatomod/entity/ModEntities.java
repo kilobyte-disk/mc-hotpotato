@@ -16,9 +16,9 @@ public class ModEntities {
         PotatoMod.MODID
     );
 
-    public static final RegistryObject<EntityType<PotatoProjectile>> POTATOPROJECTILE = ENTITY_TYPES.register(
-        "potatoprojectile",
-        () -> EntityType.Builder.<PotatoProjectile>of(PotatoProjectile::new, MobCategory.MISC).sized(1.0F, 2.0F).build("minecraft:baked_potato")
+    public static final RegistryObject<EntityType<PotatoProjectile>> POTATO_PROJECTILE = ENTITY_TYPES.register(
+        "potato_projectile",
+        () -> EntityType.Builder.<PotatoProjectile>of(PotatoProjectile::new, MobCategory.MISC).sized(0.5F, 0.5F).build("potato_projectile")
 
     );
 

@@ -1,7 +1,7 @@
 package net.kilobytedisk.hotpotatomod.item;
 
 import net.kilobytedisk.hotpotatomod.PotatoMod;
-import net.kilobytedisk.hotpotatomod.item.throwable.HotPotato;
+import net.kilobytedisk.hotpotatomod.item.throwable.HotPotatoItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,7 +17,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> HOTPOTATO = ITEMS.register(
         "hotpotato",
-        () -> new HotPotato(new Item.Properties().durability(0).stacksTo(16))
+        () -> new HotPotatoItem(new Item.Properties().durability(0).stacksTo(16))
     );
 
 

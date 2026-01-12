@@ -19,11 +19,11 @@ public class PotatoProjectile extends ThrowableItemProjectile {
     }
 
     public PotatoProjectile(Level level, LivingEntity shooter) {
-        super(ModEntities.POTATOPROJECTILE.get(), shooter, level);
+        super(ModEntities.POTATO_PROJECTILE.get(), shooter, level);
     }
 
     public PotatoProjectile(Level level, double x, double y, double z) {
-        super(ModEntities.POTATOPROJECTILE.get(), x, y, z, level);
+        super(ModEntities.POTATO_PROJECTILE.get(), x, y, z, level);
     }
 
     @Override
