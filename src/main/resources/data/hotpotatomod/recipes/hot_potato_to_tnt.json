@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    
+    "pattern": [
+        "@@@",
+        "@#@",
+        "@@@"
+    ],
+
+    "key": {
+        "@": {
+            "item": "minecraft:dirt"
+        },
+        "#": {
+            "item": "hotpotatomod:hot_potato"
+        }
+    },
+    
+    "result": {
+        "count": 64,
+        "item": "minecraft:tnt"
+    }
+}
+    

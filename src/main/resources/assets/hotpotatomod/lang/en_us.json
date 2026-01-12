@@ -1,3 +1,5 @@
 {
-    "item.hotpotatomod.hotpotato": "Hot Potato"
+    "item.hotpotatomod.hot_potato": "Hot Potato",
+
+    "creativetab.potato_tab": "감자"
 }

@@ -3,6 +3,7 @@ package net.kilobytedisk.hotpotatomod;
 import com.mojang.logging.LogUtils;
 
 import net.kilobytedisk.hotpotatomod.entity.ModEntities;
+import net.kilobytedisk.hotpotatomod.item.ModCreativeTabs;
 import net.kilobytedisk.hotpotatomod.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -34,14 +35,13 @@ public class PotatoMod
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        //TODO: Use from the new classes
 
         // Register the Deferred Register to the mod event bus so blocks get registered
         ModItems.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ModEntities.register(modEventBus);
         // Register the Deferred Register to the mod event bus so tabs get registered
-        //CREATIVE_MODE_TABS.register(modEventBus);
+        ModCreativeTabs.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

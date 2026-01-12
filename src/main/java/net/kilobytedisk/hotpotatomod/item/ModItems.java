@@ -15,8 +15,8 @@ public class ModItems {
         PotatoMod.MODID
     );
 
-    public static final RegistryObject<Item> HOTPOTATO = ITEMS.register(
-        "hotpotato",
+    public static final RegistryObject<Item> HOT_POTATO = ITEMS.register(
+        "hot_potato",
         () -> new HotPotatoItem(new Item.Properties().durability(0).stacksTo(16))
     );
 
