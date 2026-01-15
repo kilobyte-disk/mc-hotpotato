@@ -11,8 +11,12 @@ import net.minecraft.world.level.Level;
 
 public class HotPotatoItem extends Item {
 
-    public HotPotatoItem(Properties prop) {
+    private float explosiveRadius = 10.0F;
+
+    public HotPotatoItem(Properties prop, float explosiveRadius) {
         super(prop);
+
+        this.explosiveRadius = explosiveRadius;
     }
 
     @Override
@@ -23,6 +27,7 @@ public class HotPotatoItem extends Item {
 
         if (!level.isClientSide) {
             PotatoProjectile projectile = new PotatoProjectile(level, player);
+            projectile.setExplosiveRadius(explosiveRadius);
             projectile.setItem(itemstack);
             projectile.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 1.5F, 1.0F);
 

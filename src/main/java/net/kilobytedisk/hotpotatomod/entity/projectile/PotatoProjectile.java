@@ -12,7 +12,7 @@ import net.minecraft.world.phys.HitResult;
 
 public class PotatoProjectile extends ThrowableItemProjectile {
 
-    private float explosiveSize = 100.0F;
+    private float explosiveRadius;
 
     public PotatoProjectile(EntityType<? extends PotatoProjectile> entity, Level level) {
         super(entity, level);
@@ -31,6 +31,10 @@ public class PotatoProjectile extends ThrowableItemProjectile {
         return ModItems.HOT_POTATO.get();
     }
 
+    public void setExplosiveRadius(float r) {
+        explosiveRadius = r;
+    }
+
 
     public void onHitEntity(EntityHitResult entity) {
         // do nothing
@@ -46,7 +50,7 @@ public class PotatoProjectile extends ThrowableItemProjectile {
                 hit.getLocation().x,
                 hit.getLocation().y,
                 hit.getLocation().z,
-                explosiveSize, // Radius?
+                explosiveRadius, // Radius
                 Level.ExplosionInteraction.TNT
             );
 

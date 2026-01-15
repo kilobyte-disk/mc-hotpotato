@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 
 import net.kilobytedisk.hotpotatomod.entity.ModEntities;
 import net.kilobytedisk.hotpotatomod.item.ModCreativeTabs;
+import net.kilobytedisk.hotpotatomod.item.ModItemDispenseBehavior;
 import net.kilobytedisk.hotpotatomod.item.ModItems;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
@@ -46,6 +47,7 @@ public class PotatoMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+
         // Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
         context.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
@@ -54,6 +56,7 @@ public class PotatoMod
     {
         // Some common setup code
         
+        ModItemDispenseBehavior.bootStrap();
     }
 
 

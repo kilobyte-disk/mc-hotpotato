@@ -17,9 +17,18 @@ public class ModItems {
 
     public static final RegistryObject<Item> HOT_POTATO = ITEMS.register(
         "hot_potato",
-        () -> new HotPotatoItem(new Item.Properties().durability(0).stacksTo(16))
+        () -> new HotPotatoItem(new Item.Properties().durability(0).stacksTo(32), 30.0F)
     );
 
+    public static final RegistryObject<Item> NUKE_POTATO = ITEMS.register(
+        "nuke_potato",
+        () -> new HotPotatoItem(new Item.Properties().durability(0).stacksTo(16), 100.0F)
+    );
+
+    public static final RegistryObject<Item> POTATO_ROD = ITEMS.register(
+        "potato_rod",
+        () -> new Item(new Item.Properties().durability(0).stacksTo(8))
+    );
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

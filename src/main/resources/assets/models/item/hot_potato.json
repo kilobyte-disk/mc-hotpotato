@@ -1,6 +1,0 @@
-{
-  "parent": "potatomod:item",
-  "textures": {
-    "layer0": "potatomod:item/hot_potato"
-  }
-}

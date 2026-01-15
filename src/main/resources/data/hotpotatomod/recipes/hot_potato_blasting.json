@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:blasting",
+    "category": "misc",
+
+    "cookingtime": 150,
+    "experience": 0.1,
+
+    "ingredient": {
+        "item": "minecraft:baked_potato"
+    },
+
+    "result": "hotpotatomod:hot_potato"
+}

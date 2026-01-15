@@ -10,7 +10,7 @@
 
     "key": {
         "@": {
-            "item": "minecraft:dirt"
+            "item": "hotpotatomod:potato_rod"
         },
         "#": {
             "item": "hotpotatomod:hot_potato"
@@ -18,8 +18,8 @@
     },
     
     "result": {
-        "count": 64,
-        "item": "minecraft:tnt"
+        "count": 1,
+        "item": "hotpotatomod:nuke_potato"
     }
 }
     
